@@ -1,0 +1,106 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F2
+}
+#container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#content {
+  width: 65%;
+  margin: auto;
+}
+
+p {
+  font-family: Tahoma;
+  font-size: 40px;
+  line-height: 1.6em;
+  text-align: justify;
+
+}
+
+p span {
+  font-family: Trebuchet;
+  font-style: italic;
+  font-size: 45px;
+}
+
+
+/*random*/
+
+
+
+.stuff{
+  position: fixed;
+  padding: 15px;
+  max-width: 600px;
+  font-size: 22px;
+  color: black;
+  webkit-box-shadow: 6px 6px 25px -6px rgba(0,0,0,0.75);
+  moz-box-shadow: 6px 6px 25px -6px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 25px -6px rgba(0,0,0,0.75);
+}
+
+.img{
+  position: fixed;
+  background-color: white;
+  webkit-box-shadow: 6px 6px 25px -6px rgba(0,0,0,0.75);
+  moz-box-shadow: 6px 6px 25px -6px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 25px -6px rgba(0,0,0,0.75);
+  max-width: 900px;
+  
+
+}
+
+.img img {
+   z-index: -1;
+   width: 100%;
+   margin-bottom: -4px;
+}
+
+.img .close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+.close {
+  float: right;
+  z-index: 10000;
+  font-family: Arial;
+  font-size: 15Px;
+}
+
+#d1 {
+  z-index: 100;
+  background-color: #e6f0ff;
+}
+
+#d2 {
+  z-index: 90;
+}
+
+#d3 {
+  z-index: 80;
+  background-color:   #e6ffff;
+}
+
+#d4 {
+  z-index: 70;
+  background-color: #FFFFFF;
+}
+
+#d5 {
+  z-index: 60;
+}
+
+#gradient {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+}
