@@ -1,8 +1,15 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: #F2F2F2
+  background-color: #F2F2F2;
+    cursor: default;
 }
+
+::selection {
+  color: white;
+  background : #696969;
+}
+
 #container {
   width: 100vw;
   height: 100vh;
@@ -18,13 +25,15 @@ p {
   font-size: 40px;
   line-height: 1.6em;
   text-align: justify;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
 }
 
 p span {
   font-family: Trebuchet;
   font-style: italic;
-  font-size: 45px;
+  font-size: 47px;
 }
 
 
@@ -38,6 +47,7 @@ p span {
   max-width: 600px;
   font-size: 22px;
   color: black;
+  border-radius: 5px;
   webkit-box-shadow: 6px 6px 25px -6px rgba(0,0,0,0.75);
   moz-box-shadow: 6px 6px 25px -6px rgba(0,0,0,0.75);
   box-shadow: 6px 6px 25px -6px rgba(0,0,0,0.75);
@@ -46,6 +56,7 @@ p span {
 .img{
   position: fixed;
   background-color: white;
+  border-radius: 5px;
   webkit-box-shadow: 6px 6px 25px -6px rgba(0,0,0,0.75);
   moz-box-shadow: 6px 6px 25px -6px rgba(0,0,0,0.75);
   box-shadow: 6px 6px 25px -6px rgba(0,0,0,0.75);
@@ -58,6 +69,7 @@ p span {
    z-index: -1;
    width: 100%;
    margin-bottom: -4px;
+   border-radius: 5px;
 }
 
 .img .close {
@@ -71,6 +83,7 @@ p span {
   z-index: 10000;
   font-family: Arial;
   font-size: 15Px;
+  cursor: pointer;
 }
 
 #d1 {
