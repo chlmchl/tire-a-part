@@ -1,5 +1,5 @@
 function setImgPosition() {
-  $('.draggable').each(function() {
+  $('.random').each(function() {
     var contW = $('#container').width(),
       contH = $('#container').height(),
       maxPosX = (contW - $(this).outerWidth() - 10),
@@ -28,5 +28,23 @@ $( function() {
   } );
 
 
+//appear
 
+function showImages(el) {
+        var windowHeight = jQuery( window ).height();
+        $(el).each(function(){
+            var thisPos = $(this).offset().top;
 
+            var topOfWindow = $(window).scrollTop();
+            if (topOfWindow + windowHeight - 200 > thisPos ) {
+                $(this).addClass("fadeIn");
+            }
+        });
+    }
+
+   
+
+    // if the image in the window of browser when scrolling the page, show that image
+    $(window).scroll(function() {
+            showImages('#d6');
+    });
